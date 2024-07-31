@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         } else {
             // Toast notification, pop-up. contexto é a propria aplicação, mensagem, duração, e aparecer na tela
             Toast.makeText(this, R.string.validation_fill_all_fields, Toast.LENGTH_SHORT).show()
+            binding.textTotalValue.text = "R$ 0"
         }
     }
 }
